@@ -1,5 +1,5 @@
 /*
-	Statement is an expression which termintaes with semicolon.
+	Statement is an expression which terminates with semicolon.
 	1)Non-executable statement = Tells the compiler how to build a program.(Machine code is not generated.)
 	2)Executable statement = Represent the instructions that are to be performed when the program is executed.(Machine code is generated.)
 */
