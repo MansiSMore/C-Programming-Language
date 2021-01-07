@@ -7,11 +7,15 @@
 
 int main()					
 {
-	int i = 0, n = 5;
+	// Initialization
+	int i = 0;
 	
+	// Condition
 	while(i < 5)
 	{
 		printf("While loop count : %d\n", i);
+		
+		//Increment
 		i++;
 	}
 
