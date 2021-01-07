@@ -1,5 +1,5 @@
 /*
-	Statement is an expression which termintaes with semicolon.
+	Statement is an expression which terminates with semicolon.
 	1)Simple statement = Consists of Single statement.(Both executable and non-executable.)
 	2)Compound statement OR Block = Consists of sequence of simple statements enclosed within a pair of braces.(Both executable and 
 	non-executable statements but sequence is important.)
