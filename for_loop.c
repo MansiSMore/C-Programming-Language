@@ -7,8 +7,9 @@
 
 int main()					
 {
-	int i = 0, n = 5;
+	int i = 0;
 	
+	//Initialization, Condition, Increment
 	for(i = 0; i < 5 ; i++)
 	{
 		printf("For loop count : %d\n", i);
