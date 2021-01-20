@@ -5,6 +5,7 @@ int main()
 {
 	//Declaration of an array.
 	int arr[5];
+	int *ptr = arr;
 	
 	//int arr[];					//Not allowed.
 	//Base address of an array.
@@ -42,6 +43,10 @@ int main()
 	scanf("%d", &arr[0]);
 	printf("\nUpdated value of arr[0]: \n");
 	printf("%d", arr[0]);
+	printf("\nSize of whole array in bytes : %ld\n", sizeof(arr));
+	printf("\nSize of First element in array in bytes : %ld\n", sizeof(arr[0]));
+	printf("\nSize of pointer to an array : %ld\n", sizeof(ptr));
+	printf("\nSize of *ptr : %ld\n", sizeof(*ptr));
 	printf("\nBase Address of Array : %p\n", arr);
 	printf("\nAddress of Whole Array : %p\n", &arr);
 	printf("\nAddress of First Array : %p\n", &arr[0]);
@@ -61,7 +66,10 @@ int main()
 		printf("%d\n", brr[i]);
 	}
 	
-	//We can access index which is out of the array also execute that index, but it will print some garbage value which is not in their memory space.
+	printf("\nSize of whole array in bytes : %ld\n", sizeof(brr));
+	printf("\nSize of First element in array in bytes: %ld\n", sizeof(brr[0]));
+	printf("\nSize of whole array in bytes : %ld\n", sizeof(&brr));
+	//We can access index which is out of the array also execute that index, but it will print some garbage value which is not in their memory 		space.
 	printf("\nOut of Bound index : %d\n", brr[11]);
 	return 0;
 }
