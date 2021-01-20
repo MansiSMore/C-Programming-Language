@@ -61,5 +61,7 @@ int main()
 		printf("%d\n", brr[i]);
 	}
 	
+	//We can access index which is out of the array also execute that index, but it will print some garbage value which is not in their memory space.
+	printf("\nOut of Bound index : %d\n", brr[11]);
 	return 0;
 }
