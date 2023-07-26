@@ -50,7 +50,7 @@ int main()
 	printf("\nBase Address of Array : %p\n", arr);
 	printf("\nAddress of Whole Array : %p\n", &arr);
 	printf("\nAddress of First Array : %p\n", &arr[0]);
-	printf("\nAddress of Second Element : %p\n", arr + 1);		//base address of an array + (size of an element) * constant :: 100 + 4 * 1, 																where 100 is base address, 4 is size of an element and 1 is that constant number.
+	printf("\nAddress of Second Element: %p\n", arr + 1);		//base address of an array + (size of an element) * constant :: 100 + 4 * 1, 																where 100 is base address, 4 is size of an element and 1 is that constant number.
 						
 	//printf("\nAddress of Second Element : %p\n", &(arr + 1));
 	printf("\nAddress at which this whole array ends: %p\n", &arr + 1);				//100 + 1 * sizeof(whole array)
@@ -68,8 +68,8 @@ int main()
 	
 	printf("\nSize of whole array in bytes : %ld\n", sizeof(brr));
 	printf("\nSize of First element in array in bytes: %ld\n", sizeof(brr[0]));
-	printf("\nSize of whole array in bytes : %ld\n", sizeof(&brr));
-	//We can access an index which is out of the array also execute that index, but it will print some garbage value that is not in their memory space.
+	printf("\nSize of address of whole array in bytes : %ld\n", sizeof(&brr));
+	//We can access an index that is out of the array and also execute that index, but it will print some garbage value that is not in their memory space.
 	printf("\nOut of Bound index : %d\n", brr[11]);
 	return 0;
 }
