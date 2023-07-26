@@ -1,4 +1,4 @@
-//An Array is derived data-type, which is a collection of All Homogeneous elements stored in a sequential order.
+//An Array is a derived data-type, which is a collection of All Homogeneous elements stored in a sequential order.
 #include <stdio.h>
 
 int main()
@@ -13,8 +13,8 @@ int main()
 	
 	//printf("%p\n", arr++);		//We cannot change the base address of an array.
 	
-	//We can access the array as index-wise and pointer-wise.
-	//As we not initialize the array, below statement will represent default value.
+	//We can access the array index-wise and pointer-wise.
+	//As we did not initialize the array, the below statement will represent the default value.
 	printf("Element with its default value : %d\n", arr[0]);
 
 	//Initialize the array.
@@ -57,7 +57,7 @@ int main()
 	
 
 	//array initialization with member initialization list.
-	//In case of member initialization list, size of array is an optional.
+	//In the case of the member initialization list, the size of an array is optional.
 	int brr[8] = {11,12,13,14};
 	printf("\nFirst element : %d\n", brr[0]);
 	printf("\nFifth element : %d\n", brr[4]);
@@ -69,7 +69,7 @@ int main()
 	printf("\nSize of whole array in bytes : %ld\n", sizeof(brr));
 	printf("\nSize of First element in array in bytes: %ld\n", sizeof(brr[0]));
 	printf("\nSize of whole array in bytes : %ld\n", sizeof(&brr));
-	//We can access index which is out of the array also execute that index, but it will print some garbage value which is not in their memory 		space.
+	//We can access an index which is out of the array also execute that index, but it will print some garbage value that is not in their memory space.
 	printf("\nOut of Bound index : %d\n", brr[11]);
 	return 0;
 }
